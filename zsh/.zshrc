@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=$HOME/dotfiles/.oh-my-zsh
+export ZSH=$HOME/dotfiles/oh-my-zsh
 
 ZSH_THEME="jamescampbell"
 
@@ -12,7 +12,7 @@ DISABLE_CORRECTION="true"
 plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
-source ~/.oh-my-zsh/tmuxinator.zsh
+source ~/dotfiles/tmuxinator/tmuxinator.zsh
 
 export EDITOR='subl'
 
