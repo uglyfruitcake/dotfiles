@@ -1,4 +1,6 @@
-PROMPT='$fg[cyan]%D %D{%L:%M %p} $fg[yellow]$(get_pwd) $(git_prompt_info)
+autoload -U colors && colors
+
+PROMPT='%{$fg[cyan]%}%D %{$fg_bold[magenta]%}%D{%L:%M %p} $reset_color %{$fg[yellow]%}$(get_pwd) $(git_prompt_info)
 $reset_color→ '
 
 
