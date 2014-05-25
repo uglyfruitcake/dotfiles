@@ -4,6 +4,7 @@ PROMPT='%{$fg[cyan]%}%D %{$fg_bold[magenta]%}%D{%L:%M %p} $reset_color %{$fg[yel
 $reset_color→ '
 
 
+# something I found to update the clock
 TMOUT=1
 TRAPALRM() {
     zle reset-prompt
