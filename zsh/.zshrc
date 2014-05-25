@@ -14,7 +14,7 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 source ~/dotfiles/tmuxinator/tmuxinator.zsh
 
-export EDITOR='subl'
+export EDITOR='vim'
 
 export PATH=/usr/local/bin:$PATH
 setopt AUTO_CD
