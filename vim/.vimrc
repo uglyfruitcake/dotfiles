@@ -4,8 +4,10 @@ colorscheme solarized
 filetype plugin indent on
 syntax on
 
-"sets line numbers
-set nu
+let mapleader = ","
+
+"sets relative line numbers
+set relativenumber 
 
 "prompts before quitting unsaved file
 set confirm
