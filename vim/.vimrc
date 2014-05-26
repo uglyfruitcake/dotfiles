@@ -37,6 +37,12 @@ set nobackup
 set nowritebackup
 set noswapfile
 
+"This makes vim show the current row and column at the bottom right of the screen
+set ruler
+
+"Sets autoindent
+set autoindent
+
 "sort tabs
 set tabstop=4
 set shiftwidth=4
