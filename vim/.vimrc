@@ -6,8 +6,11 @@ syntax on
 
 let mapleader = ","
 
+"save on focus lost
+au FocusLost * :silent! wall
+
 "sets relative line numbers
-set relativenumber 
+set rnu
 
 "prompts before quitting unsaved file
 set confirm
@@ -15,6 +18,10 @@ set confirm
 "better search
 set ignorecase
 set smartcase
+map <up> <nop>
+
+"automatically reload vimrc when saved
+au BufWritePost .vimrc so ~/.vimrc
 
 " disables arrow keys
 map <up> <nop>
