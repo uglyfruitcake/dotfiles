@@ -1,20 +1,19 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/dotfiles/oh-my-zsh
+DOTFILES=$HOME/dotfiles
+source $DOTFILES/antigen/antigen.zsh
 
-ZSH_THEME="jamescampbell"
+antigen bundle ssh-agent
+
+antigen use oh-my-zsh
+
+antigen theme $DOTFILES/james.zsh-theme --no-local-clone
 
 DISABLE_CORRECTION="true"
 
-# Would you like to use another custom folder than $ZSH/custom?
-# ZSH_CUSTOM=/path/to/new-custom-folder
-
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git)
-
-source $ZSH/oh-my-zsh.sh
-source ~/dotfiles/tmuxinator/tmuxinator.zsh
+source $DOTFILES/tmuxinator/tmuxinator.zsh
 
 export EDITOR='vim'
 
 export PATH=/usr/local/bin:$PATH
 setopt AUTO_CD
+
+antigen apply
