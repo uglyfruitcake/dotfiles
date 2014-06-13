@@ -1,7 +1,7 @@
 autoload -U colors && colors
 
 PROMPT='%{$fg[cyan]%}%D{%d-%b-%Y}%{$fg_bold[magenta]%}%D{%k:%M} %{$reset_color%} $(user_host) %{$fg[yellow]%}$(get_pwd) $(git_prompt_info)
-$%{reset_color%}→ '
+%{$reset_color%}→ '
 
 # something I found to update the clock
 TMOUT=1

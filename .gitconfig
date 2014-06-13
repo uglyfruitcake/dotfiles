@@ -1,0 +1,27 @@
+[user]
+	name = James Campbell
+	email = james.campbell@tanti.org.uk
+[core]
+	excludesfile = /Users/Campbell/.gitignore_global
+    mergeoptions = --no-edit
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path =
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain
+[alias]
+	st = status -s
+	cm = commit -a -m
+	br = branch
+	ch = checkout
+	nb = checkout -b
+	mg = merge
+	ls = log --pretty=format:"%C(yellow)%h%C(green)%d\\ %Creset%s%C(blue)\\ [%cn]" --decorate
+	al = "!git config -l | grep alias | cut -c 7-"
+[color]
+	ui = true
