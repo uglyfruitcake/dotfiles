@@ -1,6 +1,6 @@
 autoload -U colors && colors
 
-PROMPT='%{$fg[cyan]%}%D %{$fg_bold[magenta]%}%D{%L:%M %p} $reset_color %{$fg[yellow]%}$(get_pwd) $(git_prompt_info)
+PROMPT='%{$fg[cyan]%}%D{%d-%b-%Y}%{$fg_bold[magenta]%}%D{%k:%M}$reset_color $(user_host) %{$fg[yellow]%}$(get_pwd) $(git_prompt_info)
 $reset_color→ '
 
 # something I found to update the clock
@@ -11,6 +11,15 @@ TRAPALRM() {
 
 function get_pwd() {
   echo "${PWD/$HOME/~}"
+}
+
+function user_host() {
+  if [[ -n $SSH_CONNECTION ]]; then
+    me="%{$fg_bold[yellow]%}%n@%m%{$reset_color%}"
+  else
+    me=""
+  fi
+  echo $me
 }
 
 
