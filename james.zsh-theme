@@ -15,7 +15,7 @@ function get_pwd() {
 
 function user_host() {
   if [[ -n $SSH_CONNECTION ]]; then
-    me="%{$fg_[blue]%}%n@%m%{$reset_color%}"
+    me="%{$fg[blue]%}%n@%m%{$reset_color%}"
   else
     me=""
   fi
