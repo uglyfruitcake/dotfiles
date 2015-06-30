@@ -17,6 +17,7 @@ if [[ -d $HOME/Desktop/gambit ]]; then
     PATH=$PATH:$HOME/Desktop/gambit
 fi
 
+export PATH=$PATH:~/Desktop/sage
 
 setopt AUTO_CD
 
