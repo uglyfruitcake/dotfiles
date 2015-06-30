@@ -5,7 +5,7 @@ antigen bundle ssh-agent
 
 antigen use oh-my-zsh
 
-antigen theme $DOTFILES/james.zsh-theme --no-local-clone
+antigen theme $DOTFILES/zsh/james.zsh-theme --no-local-clone
 
 DISABLE_CORRECTION="true"
 
@@ -17,8 +17,9 @@ if [[ -d $HOME/Desktop/gambit ]]; then
     PATH=$PATH:$HOME/Desktop/gambit
 fi
 
-export PATH=$PATH:~/Desktop/sage
-
+if [[ -d $HOME/Desktop/sage ]]; then
+    export PATH=$PATH:~/Desktop/sage
+fi
 setopt AUTO_CD
 
 antigen apply
