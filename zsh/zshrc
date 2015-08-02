@@ -22,4 +22,7 @@ if [[ -d $HOME/Desktop/sage ]]; then
 fi
 setopt AUTO_CD
 
+unalias glg
+alias glg='git log --pretty=format:"%C(yellow)%h%C(green)%d %Creset%s%C(blue) [%cn]" --decorate'
+
 antigen apply
