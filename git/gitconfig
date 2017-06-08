@@ -1,8 +1,0 @@
-[user]
-	name = Thomas Campbell
-	email = thomas.campbell@tanti.org.uk
-[core]
-	excludesfile = /Users/Campbell/.gitignore_global
-    mergeoptions = --no-edit
-[push]
-	default = simple
