@@ -49,8 +49,8 @@ platform_specific_shortcuts = {
 
 
 prompt = (
-    '{env_name}{CYAN}{user}@{hostname}{BLUE} {cwd} '
-    '{branch_color}{curr_branch}{NO_COLOR} {BLUE}\n{prompt_end}{NO_COLOR}'
+    '{GREEN}{user}@{hostname}{CYAN} {cwd} {NO_COLOR}{env_name} '
+    '{branch_color}{curr_branch}{NO_COLOR} {CYAN}\n{prompt_end} --->{NO_COLOR}'
 )
 
 right_prompt = ''
